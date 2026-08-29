@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup Pitch Competition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+
+      <h1>Startup Pitch Competition</h1>
+      <p class="subtitle">
+        Register your team and pitch your startup idea.
+      </p>
+
+      <form id="registrationForm">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          >
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="you@example.com"
+            required
+          >
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="10-digit phone number"
+            required
+          >
+          <small class="error" id="phoneError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="team">Team Name</label>
+          <input
+            type="text"
+            id="team"
+            placeholder="Enter your team name"
+            required
+          >
+          <small class="error" id="teamError"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="idea">Startup Idea</label>
+          <textarea
+            id="idea"
+            rows="5"
+            placeholder="Describe your startup idea..."
+            required
+          ></textarea>
+          <small class="error" id="ideaError"></small>
+        </div>
+
+        <button type="submit">Register Now </button>
+
+      </form>
+
+      <div id="successMessage" class="success">
+         Registration successful!
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
